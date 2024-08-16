@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
-const Pagination = ({ numberOfPages }) => {
+const Pagination = ({ numberOfPages, limit}) => {
   const [currentPage, setCurrentPage] = useState(1);
-
-  let limit = 5;
 
   const handlePageClick = (e) => {
     setCurrentPage(Number(e.target.innerHTML));
